@@ -1,6 +1,7 @@
 import "reflect-metadata";
-import { StandUpApplication } from "./app";
+import { MicroServiceApp } from "./app";
 import { Container } from "typedi";
 
-const microServiceApp = Container.get(microServiceApp);
+const microServiceApp = Container.get(MicroServiceApp);
+
 microServiceApp.listen();
